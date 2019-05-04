@@ -8,8 +8,8 @@
     >
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:src="@drawable/hoodie"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -21,7 +21,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:text="Sample text"
-        android:textSize="22dp"
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/sample_heading"
@@ -32,11 +31,20 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:text="Sample text"
-        android:textSize="22dp"
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/sample_price"
         android:layout_below="@id/sample_heading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Sample text"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/sample_description"
+        android:layout_below="@id/sample_price"/>
 
 
 </RelativeLayout>

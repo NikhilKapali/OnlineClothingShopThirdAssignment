@@ -34,6 +34,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         final ItemModel ItemModel=itemList.get(i);
         itemViewHolder.tv_heading.setText(ItemModel.getItemName());
         itemViewHolder.tv_price.setText(ItemModel.getItemPrice());
+        itemViewHolder.tv_description.setText(ItemModel.getItemDescription());
         String imageName="@drawable/"+itemList.get(i).getItemImageName();
         final int imageResource= context.getResources().getIdentifier(imageName,null, context.getPackageName());
         itemViewHolder.img.setImageResource(imageResource);
@@ -59,13 +60,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
     public class ItemViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView tv_heading,tv_price;
+        public TextView tv_heading,tv_price,tv_description;
         public ImageView img;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_heading=itemView.findViewById(R.id.sample_heading);
             tv_price=itemView.findViewById(R.id.sample_price);
+            tv_description=itemView.findViewById(R.id.sample_description);
             img=itemView.findViewById(R.id.sample_image);
         }
     }
